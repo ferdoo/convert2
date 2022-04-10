@@ -14,6 +14,6 @@ namespace convert
         public DateTime time_next_update_utc { get; set; }
         public int time_eol_unix { get; set; }
         public string base_code { get; set; }
-        public Rates rates { get; set; }
+        public Rates conversion_rates { get; set; }
     }
 }

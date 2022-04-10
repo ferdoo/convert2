@@ -51,7 +51,7 @@ namespace convert
                 {
                     if (prop.Name == targetCurency)
                     {
-                        targetCurencyValue = prop.GetValue(myDeserializedClass.rates, null).ToString();
+                        targetCurencyValue = prop.GetValue(myDeserializedClass.conversion_rates, null).ToString();
                         break;
                     }
 
@@ -94,7 +94,7 @@ namespace convert
 
             try
             {
-                exchaneUrl = @"https://open.er-api.com/v6/latest/" + _baseCurency;
+                exchaneUrl = @"https://v6.exchangerate-api.com/v6/66ad1c754e0867995844b973/latest/" + _baseCurency;
                 var json = new WebClient().DownloadString(exchaneUrl);
 
 
